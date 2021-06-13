@@ -4,34 +4,46 @@
     box-sizing: border-box;
 }
 body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0em 20rem;
+    color: #000;
+}
+a{
+    text-decoration: none;
     color: #000;
 }
 header{
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 25rem;
+    margin: 0 0rem;
 }
 #titulo1{
     color: #003700;
     display: inline-block;
 }
 #titulo2{
+    background-color: transparent;
     color: #000;
     display: inline-block;
 }
 nav{
+    background-color: transparent;
     width: 100%;
     border-top: 2px solid #000;
 }
-ul{
+#navegacion{
     display: flex;
     flex-direction: row;
     justify-content:space-evenly ;
     align-items: center;
     width: 100%;
     list-style: none;
+    font-size: 1.5em;
 }
 #container-titulo{
     display: flex;
@@ -40,18 +52,13 @@ ul{
     align-items: center;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
     font-size: 2em;
-    margin-right: 5rem;
-}
-#easybike-icon{
-    width: 5rem;
-    height: 4.5rem;
 }
 #presentacion{ 
     position: relative;
     height: 90vh;
     width: 100%;
     background-image: url("img/easybike-icon2.jpeg");
-    background-size: % 100%;
+    background-size:50% 100%;
     background-repeat: no-repeat;
     Background-attachment: fixed;
     background-position: center;
@@ -70,9 +77,7 @@ ul{
     align-content: center;
     justify-content: space-evenly;
     height: 25vh;
-    margin-right: 5rem;
     width: 50%;
-    padding-left: 2rem;
 
 }
 .titulo-service{
@@ -96,7 +101,7 @@ ul{
 }
 #galeria{
     padding: 20px;
-    margin: 0 20rem;
+    margin: 0 0rem;
     border-top: 2px solid #000;
 }
 #testimonio{
