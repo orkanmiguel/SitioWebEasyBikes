@@ -45,6 +45,8 @@ ul{
     width: 100%;
     background-image: url("img/equipodetrabajo.jpg");
     background-size: cover;
+    Background-attachment: fixed;
+
 }
 #service{
     display: flex;
@@ -106,11 +108,6 @@ ul{
 #instagram{
     transform: scale(1.5);
     filter: invert(100);
-
-}
-#div-blanco{
-    
-    
 }
 #div-social{
     display: flex;
@@ -121,6 +118,4 @@ ul{
     height: 2.5rem;
     border-radius: 50%;
     background: linear-gradient(45deg, #405DE6,#5951DB,#833AB4,#C13584,#E1306C,#FD1D1D);
-
-
 }
