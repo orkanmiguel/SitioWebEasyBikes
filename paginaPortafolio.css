@@ -2,8 +2,50 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-color: rgb(247, 247, 247);
 }
-body{
+#social-bar{
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    left: 0;
+    top: 35%;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 100;
+    transform: scale(1.5);
+}
+.icon{
+    color: #fff;
+    text-decoration: none;
+    padding:.5rem;
+    display: flex;
+    justify-content: center;
+    transition: all .5s;
+}
+.fa-instagram{
+    background: #833AB4;
+}
+.fa-whatsapp{
+    background: #01ff01cb;
+}
+.fa-envelope-open{
+    background: #FD1D1D;
+}
+.icon:first-child{
+    border-radius: 0 1rem 0 0;
+}
+.icon:last-child{
+    border-radius: 0 0 1rem 0;
+}
+.icon:hover{
+    padding-left: 3rem;
+    border-radius: 0 1rem 1rem 0;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
+main{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,28 +57,23 @@ a{
     color: #000;
 }
 header{
-    background-color: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 0rem;
 }
 #titulo1{
     color: #003700;
-    display: inline-block;
 }
 #titulo2{
-    background-color: transparent;
     color: #000;
-    display: inline-block;
 }
 nav{
-    background-color: transparent;
     width: 100%;
     border-top: 2px solid #000;
 }
 #navegacion{
+    background-color: rgba(255,255,255,0);
     display: flex;
     flex-direction: row;
     justify-content:space-evenly ;
@@ -46,6 +83,7 @@ nav{
     font-size: 1.5em;
 }
 #container-titulo{
+    background-color: rgba(255,255,255,0);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -55,14 +93,13 @@ nav{
 }
 #presentacion{ 
     position: relative;
-    height: 90vh;
+    height:90vh;
     width: 100%;
     background-image: url("img/easybike-icon2.jpeg");
-    background-size:50% 100%;
+    background-size: 50% 100%;
     background-repeat: no-repeat;
     Background-attachment: fixed;
     background-position: center;
-
 }
 #service{
     display: flex;
@@ -78,7 +115,6 @@ nav{
     justify-content: space-evenly;
     height: 25vh;
     width: 50%;
-
 }
 .titulo-service{
     font-size: 1.5em;
@@ -86,22 +122,8 @@ nav{
 .service-text{
     font-size: 1em;
 }
-#footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.5em;
-    background-color:#dce0cd;
-    height: 50vh;
-}
-#instagram-link{
-    text-decoration: none;
-    color: #000;
-}
 #galeria{
     padding: 20px;
-    margin: 0 0rem;
     border-top: 2px solid #000;
 }
 #testimonio{
@@ -122,17 +144,17 @@ nav{
     grid-auto-rows: 320px;
     grid-gap: 20px;
 }
-#instagram{
-    transform: scale(1.5);
-    filter: invert(100);
-}
-#div-social{
+#footer{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;    
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
-    background: linear-gradient(200deg, #405DE6,#5951DB,#833AB4,#C13584,#E1306C,#FD1D1D);
+    font-size: 1.5em;
+    height: 30vh;
+}
+#map{
+    padding-right: 1.5rem;
+}
+#Contacto{
+    font-size: 0.9em;
 }
