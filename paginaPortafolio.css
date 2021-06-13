@@ -32,20 +32,29 @@ ul{
     align-items: center;
     width: 100%;
     list-style: none;
-
 }
 #container-titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
     font-size: 2em;
     margin-right: 5rem;
+}
+#easybike-icon{
+    width: 5rem;
+    height: 4.5rem;
 }
 #presentacion{ 
     position: relative;
     height: 90vh;
     width: 100%;
-    background-image: url("img/equipodetrabajo.jpg");
-    background-size: cover;
+    background-image: url("img/easybike-icon2.jpeg");
+    background-size: % 100%;
+    background-repeat: no-repeat;
     Background-attachment: fixed;
+    background-position: center;
 
 }
 #service{
